@@ -55,23 +55,44 @@ nav a:hover {
   color: #003366;
 }
 
-/* Hero */
+/* Hero - Section avec image de fond */
 .hero {
+  background-image: url("images/fond-slogan.jpeg"); /* Chemin vers ton image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
   text-align: center;
-  padding: 80px 20px 50px;
-  background-color: #cce0ff; /* Plus clair que le fond général */
+  color: white; /* Texte en blanc */
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Assombri le fond */
+  z-index: 0;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  color: #003366;
+  color: white; /* Changement ici (avant c'était bleu foncé) */
 }
 
 .hero p {
   font-size: 18px;
   max-width: 600px;
   margin: auto;
+  color: white; /* Assure-toi que le paragraphe est aussi blanc */
 }
 
 /* Sections */

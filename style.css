@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #e6f0ff; /* Bleu clair */
+  background-color: #e6f0ff;
   color: #333;
 }
 
@@ -23,7 +23,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  background-color: #003366; /* Bleu foncé */
+  background-color: #003366;
   color: white;
 }
 
@@ -57,13 +57,13 @@ nav a:hover {
 
 /* Hero - Section avec image de fond */
 .hero {
-  background-image: url("images/fond-slogan.jpeg"); /* Chemin vers ton image */
+  background-image: url("images/fond-slogan.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px 20px;
   text-align: center;
-  color: white; /* Texte en blanc */
+  color: white;
   position: relative;
 }
 
@@ -72,7 +72,7 @@ nav a:hover {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Assombri le fond */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 
@@ -85,14 +85,14 @@ nav a:hover {
 .hero h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  color: white; /* Changement ici (avant c'était bleu foncé) */
+  color: white;
 }
 
 .hero p {
   font-size: 18px;
   max-width: 600px;
   margin: auto;
-  color: white; /* Assure-toi que le paragraphe est aussi blanc */
+  color: white;
 }
 
 /* Sections */
@@ -104,7 +104,7 @@ nav a:hover {
 .section h2 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #003366;
+  color: #0b45f3;
 }
 
 .section p {
@@ -113,14 +113,23 @@ nav a:hover {
   margin: auto;
 }
 
-/* Produits */
+/* Grille Produits */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Produit */
 .product {
   background-color: white;
   padding: 20px;
-  margin: 20px auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  max-width: 400px;
+  width: 300px;
+  text-align: center;
 }
 
 .product img {
@@ -131,7 +140,7 @@ nav a:hover {
 .product h3 {
   margin-top: 15px;
   font-size: 20px;
-  color: #003366;
+  color: #0816e1;
 }
 
 .product p {
@@ -143,7 +152,7 @@ nav a:hover {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #003366;
+  background-color: #026128;
   color: white;
   border-radius: 6px;
   transition: background 0.3s;
@@ -155,7 +164,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-  background-color: #cc0000; /* Rouge foncé */
+  background-color: #cc0000;
   color: white;
   text-align: center;
   padding: 20px 10px;
